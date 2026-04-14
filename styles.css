@@ -1,0 +1,158 @@
+/* Fundo preto e texto branco */
+body {
+  background-color: black;
+  color: white;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Painel Administrativo centralizado */
+.admin-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.painel-container {
+  background-color: #111;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(255, 255, 255, 0.1);
+  width: 350px;
+  text-align: center;
+}
+
+.painel-container h2 {
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.form-grupo {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.form-grupo label {
+  font-weight: bold;
+  color: #ddd;
+}
+
+.form-grupo input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #444;
+  border-radius: 8px;
+  margin-top: 5px;
+  font-size: 14px;
+  background-color: #222;
+  color: white;
+}
+
+button {
+  background: rgb(16, 0, 242);
+  color: rgb(255, 253, 253);
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+button:hover {
+  background: #02f2ff;
+  transform: scale(1.05);
+}
+
+/* Ajusta os cards dos produtos */
+.card-produto {
+  background-color: #222; /* cinza bem escuro para destacar */
+  color: white;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 6px 15px rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Deixa os títulos mais visíveis */
+.card-produto h3 {
+  color: #fff;
+}
+
+/* Preço em destaque */
+.card-produto p {
+  color: rgb(0, 238, 255); /* verde para diferenciar */
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* Efeito hover nos cards */
+.card-produto:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(255, 255, 255, 0.2);
+}
+
+/* Carrinho lateral fixo */
+.carrinho-container {
+  position: fixed;
+  top: 80px;
+  right: 20px;
+  width: 300px;
+  max-height: 80vh;
+  overflow-y: auto;
+  background: #111;
+  border: 1px solid #444;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+  z-index: 1000;
+  color: white;
+}
+
+/* Estilo dos itens da lista */
+.carrinho-container ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.carrinho-container li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+/* Botão remover ❌ pequeno */
+.carrinho-container li button {
+  background: transparent;
+  border: none;
+  color: red;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Botões de ação */
+.btn-finalizar,
+.btn-limpar {
+  width: 100%;
+  margin-top: 10px;
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-finalizar {
+  background: #28a745;
+  color: white;
+}
+
+.btn-limpar {
+  background: #dc3545;
+  color: white;
+}
